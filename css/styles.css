@@ -126,16 +126,12 @@ img {
   color: var(--hover-logo-buttonfont-color);
   
 }
-.icon-nav{
-  display: inline-block; 
+.icon{
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--description-about-color);
+  fill: currentColor;
 }
- .icon-nav:hover{
-  fill: var(--hover-logo-buttonfont-color);
- }
 
 /*hero*/
 .hero {
@@ -204,6 +200,17 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+.logo-no{
+  display: flex;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .what-we-do{
   padding-top: 0;
 }
@@ -238,6 +245,26 @@ img {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
 }
+
+.team-contact-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-contact{
+  flex-basis: calc(100% / 4 - 10px);
+  margin-left: 10px;
+}
+.link-logo:hover,
+.link-logo:focus{
+  color:var(--hover-logo-buttonfont-color);
+}
+
+
+.contact-link{
+  fill: currentColor;
+}
+
 .background {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,6 +285,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--description-about-color);
+  margin-bottom: 16px;
 }
 /*footer*/
 .footer {
