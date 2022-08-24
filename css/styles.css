@@ -121,10 +121,21 @@ img {
   color: var(--description-about-color);
 }
 .auth-nav-link:hover,
-.auth-nav-link:focus {
+.auth-nav-link:focus
+{
   color: var(--hover-logo-buttonfont-color);
+  
 }
-
+.icon-nav{
+  display: inline-block; 
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--description-about-color);
+}
+ .icon-nav:hover{
+  fill: var(--hover-logo-buttonfont-color);
+ }
 
 /*hero*/
 .hero {
@@ -177,28 +188,7 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));;
   margin-left:var(--card-set-gap);
 }
-.text::before{
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;
-}
-.icon-locator::before {
-  background-image: url(../images/svg/antenna.svg);
-}
-.icon-clock::before{
-  background-image: url(../images/svg/clock.svg);
-}
-.icon-comp::before{
-  background-image: url(../images/svg/diagram.svg);
-  }
-.icon-astronaut::before{
-  background-image: url(../images/svg/astronaut.svg);
-}
+ 
 .feature {
   margin-bottom: 10px;
   font-weight: 700;
