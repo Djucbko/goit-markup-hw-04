@@ -15,11 +15,13 @@ img {
   display: block;
 }
 :root {
+  
   --primary-text-color: #212121;
   --hover-logo-buttonfont-color: #2196f3;
   --text-color: #212121;
   --description-about-color: #757575;
   --card-set-gap:30px;
+  --svg-color:#AFB1B8;
 }
 .body {
   background-color: #ffffff;
@@ -111,8 +113,8 @@ img {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
- 
- 
+  
+
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -126,11 +128,9 @@ img {
   color: var(--hover-logo-buttonfont-color);
   
 }
-.icon{
-  width: 16px;
-  height: 12px;
+.icon-nav{
+  fill:currentColor;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 /*hero*/
@@ -208,9 +208,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
-
-
 .what-we-do{
   padding-top: 0;
 }
@@ -246,24 +243,7 @@ img {
   margin-left: var(--card-set-gap);
 }
 
-.team-contact-list{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.team-contact{
-  flex-basis: calc(100% / 4 - 10px);
-  margin-left: 10px;
-}
-.link-logo:hover,
-.link-logo:focus{
-  color:var(--hover-logo-buttonfont-color);
-}
 
-
-.contact-link{
-  fill: currentColor;
-}
 
 .background {
   background-color: #ffffff;
@@ -287,7 +267,80 @@ img {
   color: var(--description-about-color);
   margin-bottom: 16px;
 }
+.team-contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: calc(-1* 0px)
+  }
+.team-contact-list .team-contact+.team-contact{
+   margin-left: 10px;
+}
+
+.link-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--svg-color);
+  
+}
+
+.link-logo:hover,
+.link-logo:focus {
+  color: white;
+  background-color: var(--hover-logo-buttonfont-color);
+}
+.icon {
+  fill: currentColor;
+
+}
+/* our clients */
+.our-clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-link{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: var(--svg-color);
+}
+.client-icon{
+  width: 106px;
+  height: 60px;
+  }
+.our-clients .clients+.clients{
+  margin-left: 30px;
+  }
+
+.client-link:hover,
+.client-link:focus{
+   color: var(--hover-logo-buttonfont-color);
+}
+
 /*footer*/
+.footer-div{
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.footer-nav{
+  
+  margin-right: 70px;
+
+}
+.footer-contacts{
+  width: 206px;
+  height: 80px;
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -313,8 +366,7 @@ background-color: #2f303a;
 
 .address {
   font-style: normal;
-
-  font-size: 14px;
+   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -340,6 +392,36 @@ background-color: #2f303a;
 .tell-foot:focus {
   color: var(--hover-logo-buttonfont-color);
 }
+.foot-title{
+  Font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  }
+  .foot-contact{
+    display: flex;
+  }
+  .foot-contact .foot-link+.foot-link{
+    margin-left: 10px;
+  }
+  .link{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+  }
+  .link:hover{
+    background-color: var(--hover-logo-buttonfont-color);
+  }
+  
 /*hero-portfolio*/
 .hero-h2 {
         position: absolute;
@@ -403,7 +485,13 @@ background-color: #2f303a;
   border: 1px solid #EEEEEE;
   border-top: none;
 }
-
+.cards{
+  display: inline-block;
+}
+.cards:hover,
+.cards:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .p-title {
     margin-bottom: 4px;
     font-weight: 700;
