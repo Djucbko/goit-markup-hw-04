@@ -110,7 +110,9 @@ img {
 }
 .auth-nav-link {
   color: var(--description-about-color);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 21px;
   padding-bottom: 21px;
   
@@ -132,17 +134,19 @@ img {
   fill:currentColor;
   margin-right: 10px;
 }
-
 /*hero*/
 .hero {
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Img-hw4.jpg);
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -317,13 +321,17 @@ display: flex;
   width: 106px;
   height: 60px;
   }
-.our-clients .clients+.clients{
-  margin-left: 30px;
-  }
-
 .client-link:hover,
 .client-link:focus{
    color: var(--hover-logo-buttonfont-color);
+}
+.our-clients {
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.our-clients>.clients {
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
 }
 
 /*footer*/
